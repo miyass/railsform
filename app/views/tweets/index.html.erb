@@ -1,7 +1,6 @@
-<p>Hello World!!</p>
-
+<%= current_user.nickname %>
 <% @tweet.each do |test|%>
 
     <%= simple_format(test.text) %>
-    //<br> <p>
+    
 <% end %>

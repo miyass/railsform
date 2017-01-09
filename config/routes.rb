@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  get 'tweets' => 'tweets#index'  
+  devise_for :users
+  root 'tweets#index'
+  get 'tweets/new' => 'tweets#new'
+  post 'tweets' => 'tweets#create'
 end
